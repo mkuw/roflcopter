@@ -2,13 +2,19 @@
 #include <curses.h>
 #include <unistd.h>
 
-int main(void) {
+int main(int argc, char *argv[]) {
+
+    int duration = 2000;
+    if (argc >= 2) {
+        sscanf (argv[1],"%d",&duration);
+    }
 
     initscr();
     keypad(stdscr, TRUE);
     cbreak();
     noecho();
     curs_set(0);
+
 
     char *rofl[] = {
         "           :ROFL:ROFL",
@@ -31,7 +37,7 @@ int main(void) {
     int x = 0;
     int y = (LINES - rofl_lines)/2;
     int delay = 50;
-    int nsteps = 2000/delay;
+    int nsteps = duration/delay;
 
     for (int i = 0; i < nsteps; i++) {
 
