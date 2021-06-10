@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
 
     int x = 0;
     int y = (LINES - rofl_lines)/2;
-    int delay = 50;
+    int delay = 17;
     int nsteps = duration/delay;
 
     for (int i = 0; i < nsteps; i++) {
