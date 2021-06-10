@@ -8,3 +8,9 @@ LOL===__        \
          I   I
         --------/
 ```
+# Install and usage:
+Make sure to have **ncurses.h** then
+```
+make
+./rofl
+```
