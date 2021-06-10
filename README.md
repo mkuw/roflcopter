@@ -12,5 +12,6 @@ LOL===__        \
 Make sure to have **ncurses.h** then
 ```
 make
-./rofl
+./rofl duration
 ```
+where duration is in milliseconds.
